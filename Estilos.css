@@ -1,0 +1,17 @@
+/* Definicion de estilos general */
+body{
+    background-color: #f0f0f0;
+}
+h1{
+    color: red;
+}
+/* Definicion de estilos en particular */
+
+#Segundo{
+    color: blueviolet;
+}
+/* Definicion de clases */
+.mi-clase{
+    color: green;
+    background-color: yellow;
+}
