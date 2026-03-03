@@ -24,6 +24,7 @@ formulario.addEventListener(
   ("mensaje");
 
   // Tecnica del centinela 
+  let valido = true;
   if(nombre === ""){
     errorName.textContent = "El nombre es obligatorio."
     valido = false;
@@ -32,12 +33,29 @@ formulario.addEventListener(
     errorName.textContent = "";
 
   }
+if (edad === ""){
+  errorAge.textContent = "La edad es obligatoria"
+  valido = false;
+}else{
+  errorAge.textContent = "";
+}
+if (email === ""){
+  errorEmail.textContent = "El correo es obligatorio"
+  valido = false;
+  errorEmail.textContent = "";
 
+}
+if (telefono === ""){
+  errorPhone.textContent = "El telefono es obligatorio"
+  valido = false;
+}else{
+  errorPhone.textContent = "";
+}
   if(valido)
 {
   mensaje.textContent = "Registro correcto";
 }else{
   mensaje.textContent = "";
-}
-}
+  }
+ }
 );
